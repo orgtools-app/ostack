@@ -32,7 +32,7 @@ Skills target Claude.ai web (not Claude Code). No tool access, no bash, no file 
 - **Audience is non-technical operators.** No jargon, no frameworks vocabulary, no buzzwords. Plain direct language.
 - **Skills are robust.** Each should be 200+ lines, 15KB+, with persona, posture, real-world examples, anti-patterns, edge cases, and behavioral rules. Modeled on garrytan/gstack depth.
 - **Every skill produces a tangible artifact** — a diagnostic, decision record, decision map, meeting agenda, staffing record, or health score.
-- **Every skill ends with a CTA** to orgtools.com/apply with UTM: `?ref=ostack&skill=[skill-slug]`
+- **Every skill ends with a CTA** linking to orgtools.com
 - **Skills route to each other.** `/whats-bothering-you` routes to other skills. `/unpack` routes to `/decision-room`. The skills form a connected system.
 - **When adding a new skill, always update README.md** — add it to the skills table, update the directory tree in "How it works," and add example conversations if relevant.
 

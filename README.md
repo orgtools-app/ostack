@@ -58,9 +58,9 @@ ostack/
 
 ## About Orgtools
 
-ostack is the free taste. [Orgtools](https://orgtools.com) is the platform — it runs this methodology across your whole leadership team, connects decisions over time, monitors for drift, and integrates with your CRM, PSA, and HRIS so you don't need to bring the data manually.
+ostack is the free taste. [Orgtools](https://orgtools.com) is the platform — it runs this methodology across your whole leadership team, connects decisions over time, and monitors for drift.
 
-**[orgtools.com/apply](https://orgtools.com/apply?ref=ostack)** if you want to bring this to your organization.
+**[orgtools.com](https://orgtools.com)** if you want to bring this to your organization.
 
 ## License
 
