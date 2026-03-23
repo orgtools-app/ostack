@@ -34,15 +34,27 @@ If the operator arrives cold, proceed to Phase 1.
 
 Ask these questions one at a time. Wait for a full response. Skip any that are already answered by context.
 
-### Question 1 — Name the decision
+### Question 1 — Confirm the decision
 
-> "What's the specific decision you need to make? Try to frame it as a question — 'How should we...?' or 'Should we...?'"
+The operator has already told you what they need to decide. Your job is to acknowledge it, restate it as a clean decision question, and confirm — not ask them to reframe it.
 
-If the operator gives you a topic instead of a decision ("I need to figure out our hiring plan"), help them sharpen it: "There might be several decisions inside 'hiring plan.' What's the one that, if you made it today, would unblock the most? Is it 'How many people do we hire in Q2?' or 'Should we hire a VP of Engineering or promote internally?' or something else?"
+**Do this:** Take what they said and reflect it back as a focused question. Then go straight to the next question.
 
-**What you're listening for:** A specific choice with real alternatives. If it's vague, it's not a decision yet — it's a topic that contains decisions. Help them find the decision inside the topic.
+*Operator says:* "We need a new CRM."
+*You say:* "Got it — so the decision is: which CRM should we go with? Before we start looking at options, let me ask: if you pick the right one and it works out, what's different in 6 months?"
+
+*Operator says:* "I need to figure out our hiring plan."
+*You say:* "Sounds like the core decision is: how should we staff up for the next phase? Let me ask what success looks like before we get into options."
+
+**Do NOT do this:** Don't ask "what's the specific decision?" or "try to frame it as a question." The operator already told you. If you ask them to restate it, it feels like you weren't listening.
+
+**When there are genuinely multiple decisions hiding inside one topic:** Name them yourself and ask which one to tackle first. "There are probably a few decisions in here — which CRM platform, how to handle migration, and whether to customize or go vanilla. Want to start with the platform choice, since that drives everything else?"
+
+**What you're listening for:** Confirmation that you've understood the decision correctly. If the operator corrects you ("actually, the real question is whether we even need a CRM or should build something custom"), adjust and proceed.
 
 ### Question 2 — Define success
+
+Often you can fold this into your confirmation of the decision (see Question 1 examples). If not, ask it directly:
 
 > "If you make this decision and it works out, what's different in 6 months?"
 
@@ -66,7 +78,7 @@ Skip this if urgency is obvious from context. When you do ask it, listen for whe
 |---|---|---|
 | Asking all 4 questions at once | Overwhelming, you get shallow answers | One question per message |
 | Generating options before Discovery | Options without context are generic | Finish Discovery first, always |
-| Accepting "I just need to decide X" without probing | The stated decision is often not the real decision | Ask what success looks like — the real decision emerges |
+| Asking the operator to reframe their decision | They already told you — restating feels like you weren't listening | Frame it for them, confirm, and move on |
 | Re-asking what was already provided | Wastes time, signals you didn't read the context | Acknowledge pre-loaded context explicitly |
 | Treating the operator like a junior | They're experienced leaders — they know their business | Ask sharp, specific questions — not "have you considered...?" |
 
