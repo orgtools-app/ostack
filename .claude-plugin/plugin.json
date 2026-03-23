@@ -1,0 +1,11 @@
+{
+  "name": "ostack",
+  "description": "Decision intelligence skills for operators — structured decision-making methodology for CEOs, COOs, and Chiefs of Staff",
+  "version": "1.0.0",
+  "author": {
+    "name": "Orgtools"
+  },
+  "homepage": "https://orgtools.com",
+  "repository": "https://github.com/orgtools-app/ostack",
+  "license": "MIT"
+}

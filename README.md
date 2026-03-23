@@ -11,14 +11,25 @@ Most operators use Claude like a smarter Google. Vague question, generic answer,
 
 **What it does:** Skills that cover the decision lifecycle — from "something feels wrong" to a structured decision record with options, criteria, and action items. More skills coming.
 
-## Install — 60 seconds
+## Install
 
-1. Download `ostack.zip` from this repo (or clone and zip the `skills/` directory)
-2. In Claude.ai: **Settings > Customize > Skills > Upload a skill**
-3. Upload the ZIP
-4. Start talking. Claude invokes the right skill automatically.
+### Cowork (recommended)
 
-No Pro plan required. No Projects. No custom instructions to paste. Works in every conversation.
+1. Download this repo as a ZIP (Code > Download ZIP)
+2. In the Cowork tab: **Customize > Browse plugins > Upload**
+3. Upload the ZIP. All skills install at once.
+
+### Claude Code
+
+```bash
+git clone https://github.com/orgtools-app/ostack.git ~/.claude/plugins/ostack
+```
+
+All skills are auto-discovered as `/whats-bothering-you`, `/decision-room`, `/unpack`.
+
+### Claude.ai web
+
+Claude.ai web supports one skill per upload. Download individual skill folders as ZIPs and upload them one at a time at **Settings > Customize > Skills**.
 
 ## The skills
 
@@ -46,10 +57,12 @@ Claude invokes `/decision-room`. Discovery, options, evaluation, recommendation,
 
 ostack skills are SKILL.md files with YAML frontmatter — the same format Claude uses for all custom skills. Each skill is a detailed set of conversation instructions that tell Claude how to run a specific process. The `description` field tells Claude *when* to invoke the skill — what the operator says that should trigger it.
 
-There's no code, no API, no dependencies. It's structured prompts, packaged as a ZIP.
+There's no code, no API, no dependencies. It's structured prompts, packaged as a plugin.
 
 ```
 ostack/
+  .claude-plugin/
+    plugin.json                     ← plugin manifest
   skills/
     whats-bothering-you/SKILL.md    ← diagnostic intake
     decision-room/SKILL.md          ← structured decision-making

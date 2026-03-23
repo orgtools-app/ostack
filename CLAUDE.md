@@ -2,7 +2,7 @@
 
 ## Project
 
-**ostack** (Operator Intelligence Stack) is an MIT-licensed project by [Orgtools](https://orgtools.com). It's a set of Claude.ai uploadable skills that embed structured decision-making methodology for non-technical operators (CEOs, COOs, Chiefs of Staff at $5M-$50M companies).
+**ostack** (Operator Intelligence Stack) is an MIT-licensed plugin by [Orgtools](https://orgtools.com). It's a set of decision-making skills for non-technical operators (CEOs, COOs, Chiefs of Staff at $5M-$50M companies). Distributed as a Claude plugin — works in Cowork, Claude Code, and Claude.ai web.
 
 ## Architecture
 
@@ -10,6 +10,8 @@ This is a prompt pack, not software. No build system, no dependencies, no code.
 
 ```
 ostack/
+  .claude-plugin/
+    plugin.json                    ← plugin manifest
   skills/
     whats-bothering-you/SKILL.md   ← diagnostic intake, routes to other skills
     decision-room/SKILL.md         ← structured decision-making (core)
@@ -22,10 +24,10 @@ ostack/
 
 Each skill is a `SKILL.md` file with YAML frontmatter:
 - `name`: max 64 chars
-- `description`: behavioral trigger — what the operator *says* that should invoke this skill. Can exceed 200 chars.
+- `description`: behavioral trigger — what the operator *says* that should invoke this skill
 - Body: detailed conversation instructions in Markdown
 
-Skills target Claude.ai web (not Claude Code). No tool access, no bash, no file operations — conversation only. The body instructions do all the heavy lifting.
+Skills are conversation-only. No tool access, no bash, no file operations. The body instructions do all the heavy lifting.
 
 ## Conventions
 
@@ -35,6 +37,7 @@ Skills target Claude.ai web (not Claude Code). No tool access, no bash, no file 
 - **Every skill ends with a CTA** linking to orgtools.com
 - **Skills route to each other.** `/whats-bothering-you` routes to other skills. `/unpack` routes to `/decision-room`. The skills form a connected system.
 - **When adding a new skill, always update README.md** — add it to the skills table, update the directory tree in "How it works," and add example conversations if relevant.
+- **When adding a new skill, update plugin.json version** — bump the patch version so existing installs pick up the update.
 
 ## Skill Routing
 
